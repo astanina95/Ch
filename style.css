@@ -1,0 +1,127 @@
+body {
+  font-family: "Stencil Std", fantasy;
+  font-style: italic;
+  background-color: #4b304422;
+  color: #50346c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  margin: 40px 0;
+}
+.header__avatar:hover {
+  color: red;
+}
+.header__avatar {
+  border-radius: 9%;
+  width: 300px;
+  height: 300px;
+}
+
+.header__title {
+  margin: 30px 0 10px 0;
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: "Stencil Std", fantasy;
+}
+
+.header__subtitle {
+  color: #83679f;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.header_1 {
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.line {
+color: rgb(107, 91, 151);
+border-style: solid;
+}
+
+.link {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  margin: 0;
+}
+
+.link:hover {
+  color: #5da5f7;
+}
+
+.button-link {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 320px;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgba(27, 31, 36, 0.15);
+  border-radius: 5px;
+  cursor: pointer;
+  
+  font-size: 14px;
+  line-height: 2;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background-color: #5da5f7;
+  color: #fff;
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.1);
+}
+
+#myModal {
+  width: 480px; height: 360px;
+  padding: 18px 9px;
+  border-radius: 4px;
+  background-image: url(giphy.gif);
+  background-size: contain;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  display: none;
+  opacity: 0;
+  z-index: 38;
+  text-align: center;
+ 
+}
+
+#myModal #myModal__close {
+  width: 21px; height: 21px;
+  position: absolute;
+  font-size: 29px;
+  top: 1px; right: 11px;
+  cursor: pointer;
+  display: block;
+}
+
+#myOverlay {
+  z-index: 37;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  cursor: pointer;
+  display: none;
+  
+}
+
+.myLinkModal {
+  text-decoration: none;
+  
+}
